@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_M5sRAAvbEeKdSe9MrP9EUA" name="MyAppModel">
+  <packageImport xmi:id="_jQjlUAvbEeKdSe9MrP9EUA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_d2V_YAvbEeKdSe9MrP9EUA" name="com.github.lbroudoux.myapp.domain">
+    <packagedElement xmi:type="uml:Class" xmi:id="_psDpIAvbEeKdSe9MrP9EUA" name="Stuff">
+      <ownedAttribute xmi:id="_szmB0AvbEeKdSe9MrP9EUA" name="foo">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sz0rUAvbEeKdSe9MrP9EUA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sz0EQAvbEeKdSe9MrP9EUA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_uH138AvbEeKdSe9MrP9EUA" name="bar">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uIBeIQvbEeKdSe9MrP9EUA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uIBeIAvbEeKdSe9MrP9EUA"/>
+      </ownedAttribute>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
