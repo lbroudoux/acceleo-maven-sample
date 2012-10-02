@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.lbroudoux.acceleo</groupId>
   <artifactId>com.github.lbroudoux.acceleo.uml.java.jpa</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1.qualifier-SNAPSHOT</version>
   <name>Acceleo Java JPA Module</name>
   <description>Sample Acceleo JPA Module Runtime Plug-in</description>
   <properties>
@@ -14,9 +14,9 @@
       <id>Indigo Release</id>
       <url>https://raw.github.com/eclipse/acceleo/master/maven/repository/releases/indigo</url>
     </repository>
-  <repository>
+    <repository>
       <id>Snapshots</id>
-      <url>https://raw.github.com/eclipse/acceleo/master/maven/repository/snapshots</url>
+      <url>https://raw.github.com/lbroudoux/acceleo/master/maven/repository/snapshots</url>
     </repository>
   </repositories>
   
@@ -27,7 +27,7 @@
     </pluginRepository>
   <pluginRepository>
       <id>Snapshots</id>
-      <url>https://raw.github.com/eclipse/acceleo/master/maven/repository/snapshots</url>
+      <url>https://raw.github.com/lbroudoux/acceleo/master/maven/repository/snapshots</url>
     </pluginRepository>
   </pluginRepositories>
   
@@ -56,7 +56,7 @@
     <dependency>
       <groupId>com.github.lbroudoux.acceleo</groupId>
       <artifactId>com.github.lbroudoux.acceleo.uml.java</artifactId>
-      <version>0.0.1-SNAPSHOT</version>
+      <version>0.0.1.qualifier-SNAPSHOT</version>
     </dependency>
     
     <dependency>
@@ -104,7 +104,7 @@
               </entry>
             </entries>
             <jars>
-              <jar>com.github.lbroudoux.acceleo:com.github.lbroudoux.acceleo.uml.java:0.0.1-SNAPSHOT</jar>
+              <jar>com.github.lbroudoux.acceleo:com.github.lbroudoux.acceleo.uml.java:0.0.1.qualifier-SNAPSHOT</jar>
             </jars>
           </acceleoProject>
           <packagesToRegister>

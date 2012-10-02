@@ -392,8 +392,6 @@ public class Generate extends AbstractAcceleoGenerator {
            // The normal package registration if your metamodel is in a plugin.
            resourceSet.getPackageRegistry().put(UMLPackage.eNS_URI, UMLPackage.eINSTANCE);
            
-           // URI uri = URI.createURI("jar:file:/home/laurent/dev/sts-2.9.2-RELEASE-2/plugins/org.eclipse.uml2.uml.resources_3.1.100.v201008191510.jar!/");
-           
            if (umlJarPath != null){
               URI uri = URI.createURI("jar:file:" + umlJarPath + "!/");
               

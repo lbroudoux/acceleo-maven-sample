@@ -8,7 +8,7 @@
   <repositories>
     <repository>
       <id>Snapshots</id>
-      <url>https://raw.github.com/eclipse/acceleo/master/maven/repository/snapshots</url>
+      <url>https://raw.github.com/lbroudoux/acceleo/master/maven/repository/snapshots</url>
     </repository>
   </repositories>
   <dependencies>
@@ -66,7 +66,7 @@
           <dependency>
             <groupId>com.github.lbroudoux.acceleo</groupId>
             <artifactId>com.github.lbroudoux.acceleo.uml.java.jpa</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>0.0.1.qualifier-SNAPSHOT</version>
           </dependency>
         </dependencies>
       </plugin>

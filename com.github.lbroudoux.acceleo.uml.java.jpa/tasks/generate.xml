@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="generate" name="com.github.lbroudoux.acceleo.uml.java.jpa">
     <property name="ECLIPSE_HOME" value="../../../../sts-2.9.2-RELEASE-2"/>
-    <property name="ECLIPSE_WORKSPACE" value="../.."/>
+    <property name="ECLIPSE_WORKSPACE" value="../../../../workspaces/sts-2.9.2-RELEASE-23"/>
 
     <!-- The classpath with only the dependencies used by the project -->
     <path id="com.github.lbroudoux.acceleo.uml.java.jpa.libraryclasspath">
