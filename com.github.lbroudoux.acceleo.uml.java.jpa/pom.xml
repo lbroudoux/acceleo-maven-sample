@@ -25,9 +25,19 @@
       <id>Indigo Release</id>
       <url>https://raw.github.com/eclipse/acceleo/master/maven/repository/releases/indigo</url>
     </pluginRepository>
-  <pluginRepository>
+    <pluginRepository>
       <id>Snapshots</id>
       <url>https://raw.github.com/lbroudoux/acceleo/master/maven/repository/snapshots</url>
+    </pluginRepository>
+    <pluginRepository>
+      <id>Google Code Maven Replacer Repository</id>
+      <url>http://maven-replacer-plugin.googlecode.com/svn/release-repo</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+       <enabled>true</enabled>
+      </releases>
     </pluginRepository>
   </pluginRepositories>
   
@@ -111,6 +121,48 @@
             <packageToRegister>org.eclipse.uml2.uml.UMLPackage</packageToRegister>
           </packagesToRegister>
         </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>com.google.code.maven-replacer-plugin</groupId>
+        <artifactId>maven-replacer-plugin</artifactId>
+        <version>1.3.1</version>
+        <executions>
+          <execution>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>replace</goal>
+            </goals>
+            <configuration>
+              <includes>
+                <include>target/**/*.emtl</include>
+              </includes>
+              <regex>true</regex>
+              <token>jar:file:.*.jar!</token>
+              <value>../../../../../../../..</value>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>2.4</version>
+        <executions>
+          <execution>
+            <id>make-assembly</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <configuration>
+              <descriptors>
+                <descriptor>assembly.xml</descriptor>
+              </descriptors>
+            </configuration>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>

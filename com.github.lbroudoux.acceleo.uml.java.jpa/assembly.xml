@@ -1,0 +1,17 @@
+<assembly xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
+  <id>uber</id>
+  <formats>
+    <format>jar</format>
+  </formats>
+  <includeBaseDirectory>false</includeBaseDirectory>
+  <dependencySets>
+    <dependencySet>
+      <includes>
+        <include>com.github.lbroudoux.acceleo:com.github.lbroudoux.acceleo.uml.java</include>
+        <include>com.github.lbroudoux.acceleo:com.github.lbroudoux.acceleo.uml.java.jpa</include>
+      </includes>
+      <unpack>true</unpack>
+      <useTransitiveDependencies>false</useTransitiveDependencies>
+    </dependencySet>
+  </dependencySets>
+</assembly>
